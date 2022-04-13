@@ -104,7 +104,7 @@ dependencies = [
  "itertools 0.10.3",
  "jubjub",
  "loupe",
- "masp_primitives",
+ "masp_primitives 0.5.0 (git+https://github.com/memasdeligeorgakis/masp?branch=feat/000/remove_std_from_bip0039_dep)",
  "masp_proofs",
  "parity-wasm",
  "pretty_assertions",
@@ -180,7 +180,7 @@ dependencies = [
  "libc",
  "libloading",
  "libp2p",
- "masp_primitives",
+ "masp_primitives 0.5.0 (git+https://github.com/memasdeligeorgakis/masp?branch=feat/000/remove_std_from_bip0039_dep)",
  "masp_proofs",
  "message-io",
  "num-derive",
@@ -313,7 +313,7 @@ dependencies = [
  "getrandom 0.2.5",
  "hex",
  "jubjub",
- "masp_primitives",
+ "masp_primitives 0.5.0 (git+https://github.com/memasdeligeorgakis/masp?branch=feat/000/remove_std_from_bip0039_dep)",
  "masp_proofs",
 ]
 
@@ -4033,7 +4033,7 @@ dependencies = [
 [[package]]
 name = "masp_primitives"
 version = "0.5.0"
-source = "git+https://github.com/murisi/masp?branch=murisi/masp-transaction3#2c40e91e2a59b5a64c6932f8e7931f9c1c4fe24d"
+source = "git+https://github.com/memasdeligeorgakis/masp?branch=feat/000/remove_std_from_bip0039_dep#393a4769115730001496df1274343e5d0ab9e791"
 dependencies = [
  "aes",
  "bip0039",
@@ -4064,6 +4064,37 @@ dependencies = [
 ]
 
 [[package]]
+name = "masp_primitives"
+version = "0.5.0"
+source = "git+https://github.com/murisi/masp?branch=murisi/masp-transaction3#2c40e91e2a59b5a64c6932f8e7931f9c1c4fe24d"
+dependencies = [
+ "aes",
+ "bip0039",
+ "bitvec",
+ "blake2b_simd 1.0.0",
+ "blake2s_simd 1.0.0",
+ "bls12_381",
+ "borsh",
+ "byteorder",
+ "chacha20poly1305 0.9.0",
+ "crypto_api_chachapoly",
+ "ff",
+ "fpe",
+ "group",
+ "hex",
+ "incrementalmerkletree",
+ "jubjub",
+ "lazy_static 1.4.0",
+ "rand 0.8.5",
+ "rand_core 0.6.3",
+ "serde 1.0.136",
+ "sha2 0.9.9",
+ "subtle 2.4.1",
+ "zcash_encoding",
+ "zcash_primitives",
+]
+
+[[package]]
 name = "masp_proofs"
 version = "0.5.0"
 source = "git+https://github.com/murisi/masp?branch=murisi/masp-transaction3#2c40e91e2a59b5a64c6932f8e7931f9c1c4fe24d"
@@ -4078,7 +4109,7 @@ dependencies = [
  "itertools 0.10.3",
  "jubjub",
  "lazy_static 1.4.0",
- "masp_primitives",
+ "masp_primitives 0.5.0 (git+https://github.com/murisi/masp?branch=murisi/masp-transaction3)",
  "minreq",
  "rand_core 0.6.3",
  "wagyu-zcash-parameters",
